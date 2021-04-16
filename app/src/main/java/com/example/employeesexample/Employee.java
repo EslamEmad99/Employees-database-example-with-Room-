@@ -11,8 +11,11 @@ public class Employee {
 
     private String name;
 
-    public Employee(String name) {
+    private int salary;
+
+    public Employee(String name, int salary) {
         this.name = name;
+        this.salary = salary;
     }
 
     public int getId() {
@@ -29,5 +32,13 @@ public class Employee {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
     }
 }
